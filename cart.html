@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping Cart - Peek Marketplace</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Your Shopping Cart</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Items in Your Cart</h2>
+    <div id="cart-items"></div>
+
+    <div id="empty-cart-message" style="display: none; text-align: center;">
+      <p>Your cart is empty. <a href="products.html">Browse products</a> to get started!</p>
+    </div>
+
+    <h3>Total: R<span id="total-price">0</span></h3>
+    <button onclick="checkout()">Proceed to Checkout</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Peek Marketplace. All rights reserved.</p>
+  </footer>
+</body>
+</html>
